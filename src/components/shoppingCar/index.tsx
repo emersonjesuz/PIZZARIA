@@ -8,7 +8,7 @@ import showToast from "@/utils/showToast";
 import { useState } from "react";
 import { FaCartShopping } from "react-icons/fa6";
 import { IoMdCloseCircle } from "react-icons/io";
-import AlertSubmit from "../alertSubmit";
+import AlertSubmit from "../AlertSubmit";
 import { Button } from "../ui/button";
 
 export default function ShoppingCar() {

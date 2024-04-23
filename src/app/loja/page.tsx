@@ -1,6 +1,6 @@
 "use client";
-import ProductShelf from "@/components/productShelf";
-import ShoppingCar from "@/components/shoppingCar";
+import ProductShelf from "@/components/ProductShelf";
+import ShoppingCar from "@/components/ShoppingCar";
 import { useAppDispatch, useAppSelector } from "@/redux/hook";
 import { useEffect, useState } from "react";
 import { FaPizzaSlice, FaShoppingCart } from "react-icons/fa";

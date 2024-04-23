@@ -1,9 +1,11 @@
-import { ReduxProvider } from "@/components/reduxProvider";
+import { ReduxProvider } from "@/components/ReduxProvider";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
+import Header from "@/components/Haeder";
+import ProviderGlobal from "@/components/ProviderGlobal";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(inter.className)}>
-        <ReduxProvider>{children}</ReduxProvider>
+        <ReduxProvider>
+          <ProviderGlobal>{children}</ProviderGlobal>
+        </ReduxProvider>
         <Toaster />
       </body>
     </html>
