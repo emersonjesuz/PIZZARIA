@@ -12,9 +12,11 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { usePathname } from "next/navigation";
+import { useAppSelector } from "@/redux/hook";
 
 export default function Header() {
   const path = usePathname();
+  const useUserRedux = useAppSelector(({ user }) => user);
 
   return (
     <div className="relative flex justify-between items-center w-full lg:px-10 px-4 h-[70px] bg-white shadow-lg shadow-black/30 z-50">
@@ -51,7 +53,10 @@ export default function Header() {
         </Link>
       </div>
 
-      <div className="flex items-center gap-3">
+      <div
+        data-login={!!useUserRedux.username}
+        className="flex data-[login=true]:hidden items-center gap-3"
+      >
         <Link
           href={"/login"}
           className="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-200 text-vermelho_3 shadow-lg shadow-black/30 hover:scale-105 border-[2px] border-vermelho_3"
@@ -65,6 +70,13 @@ export default function Header() {
           Cadastrer-se
         </Link>
       </div>
+
+      <h1
+        data-login={!!useUserRedux.username}
+        className="hidden data-[login=true]:block text-vermelho_3 font-bold capitalize line-clamp-1"
+      >
+        {useUserRedux.username}
+      </h1>
       <div className="block lg:hidden">
         <DropdownMenu>
           <DropdownMenuTrigger>
@@ -73,8 +85,9 @@ export default function Header() {
           <DropdownMenuContent>
             <DropdownMenuItem>
               <Link
+                data-path={path === "/"}
                 href={"/"}
-                className="text-vermelho_1 font-bold hover:scale-105 cursor-pointer  border-b border-b-vermelho_3"
+                className="text-vermelho_1 font-bold hover:scale-105 cursor-pointer  border-b data-[path=true]:border-b-vermelho_3 border-transparent"
               >
                 Home
               </Link>
@@ -82,16 +95,18 @@ export default function Header() {
             <DropdownMenuSeparator />
             <DropdownMenuItem>
               <Link
-                href={""}
-                className="text-vermelho_1 font-bold hover:scale-105 cursor-pointer"
+                data-path={path === "/loja"}
+                href={"/loja"}
+                className="text-vermelho_1 font-bold hover:scale-105 cursor-pointer border-b data-[path=true]:border-b-vermelho_3 border-transparent"
               >
                 Fazer pedido
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
               <Link
+                data-path={path === "/sobre"}
                 href={"/sobre"}
-                className="text-vermelho_1 font-bold hover:scale-105 cursor-pointer"
+                className="text-vermelho_1 font-bold hover:scale-105 cursor-pointer border-b data-[path=true]:border-b-vermelho_3 border-transparent"
               >
                 Sobre
               </Link>
