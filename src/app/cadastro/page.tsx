@@ -95,7 +95,7 @@ export default function Cadastro() {
           </button>
           <p className="text-white/70">
             Ja possui uma conta?
-            <Link href={"/login"} className="text-orange-500">
+            <Link href={"/login"} className="text-orange-500 pl-2">
               Entrar
             </Link>
           </p>

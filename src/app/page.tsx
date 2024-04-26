@@ -50,7 +50,7 @@ export default function Home() {
           <div
             key={item.id}
             data-impar={index % 2 !== 0}
-            className="flex items-center flex-col-reverse lg:data-[impar=true]:flex-row-reverse lg:flex-row  lg:justify-center gap-5 w-full lg:h-[500px] py-10 bg-black data-[impar=true]:bg-white px-5"
+            className="flex items-center flex-col-reverse lg:data-[impar=true]:flex-row-reverse lg:flex-row  lg:justify-center gap-5 w-full lg:h-[700px] py-10 bg-black data-[impar=true]:bg-white px-5"
           >
             <div className="flex flex-col items-center gap-5 w-full lg:w-[50%] ">
               <h2

@@ -176,4 +176,13 @@ export const pizzas = [
     price: 36.0,
     image: imagePizza,
   },
+  {
+    id: 21,
+    name: "Pizza de Frango com Catupiry e Bacon",
+    description:
+      "Uma combinação de sabores marcantes: frango desfiado, catupiry cremoso e bacon crocante.",
+    unit: 1,
+    price: 36.0,
+    image: imagePizza,
+  },
 ];
