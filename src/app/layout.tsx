@@ -1,10 +1,10 @@
 import ProviderGlobal from "@/components/ProviderGlobal";
-import { ReduxProvider } from "@/components/ReduxProvider";
 import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ReduxProvider } from "@/components/ReduxProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
