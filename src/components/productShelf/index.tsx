@@ -24,7 +24,7 @@ export default function ProductShelf() {
     showToast("Item Novo No Carrinho 😍", "success");
   }
   return (
-    <div className="flex items-center justify-between  flex-col  lg:flex-row lg:flex-wrap  gap-6 lg:w-[80%] w-full  py-5  rounded-md">
+    <div className="flex items-center justify-between flex-col lg:flex-row lg:flex-wrap  gap-6 lg:w-[80%] w-full  py-5  rounded-md">
       {pizzas.map((pizza) => (
         <div
           key={pizza.id}

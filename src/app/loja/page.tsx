@@ -1,25 +1,20 @@
 "use client";
-import ProductShelf from "@/components/ProductShelf";
-import { useAppDispatch, useAppSelector } from "@/redux/hook";
-import { RemoveAllShoppingCar } from "@/redux/reducers/shoppingCarReducer";
-import Cookies from "js-cookie";
-import Image from "next/image";
-import { useRouter } from "next/navigation";
-import { Suspense, useState } from "react";
-import { FaPizzaSlice, FaShoppingCart } from "react-icons/fa";
 import pizzaPromo1 from "@/assets/promo1.jpg";
 import pizzaPromo2 from "@/assets/promo2.jpg";
 import pizzaPromo3 from "@/assets/promo3.jpg";
 import pizzaPromo4 from "@/assets/promo4.jpg";
 import pizzaPromo5 from "@/assets/promo5.jpg";
 import pizzaPromo6 from "@/assets/promo6.jpg";
+import ProductShelf from "@/components/ProductShelf";
 import { partners } from "@/helpers/dataStores";
+import { useAppSelector } from "@/redux/hook";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { Suspense, useState } from "react";
+import { FaPizzaSlice, FaShoppingCart } from "react-icons/fa";
 
 export default function Loja() {
-  const dispatch = useAppDispatch();
-  const username = useAppSelector(({ user }) => user.username);
   const useShoppingCar = useAppSelector(({ shopping }) => shopping);
-  const [showShoppingCar, setShowShoppingCar] = useState(true);
   const router = useRouter();
   const [showSelectStore, setShowSelectStore] = useState(true);
 
@@ -73,7 +68,7 @@ export default function Loja() {
               >
                 <option
                   className="bg-vermelho_1 text-white font-bold checked:bg-vermelho_1 "
-                  value=""
+                  value=" "
                 >
                   pizzaria do ze
                 </option>
