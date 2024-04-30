@@ -5,7 +5,7 @@ import pizzaPromo3 from "@/assets/promo3.jpg";
 import pizzaPromo4 from "@/assets/promo4.jpg";
 import pizzaPromo5 from "@/assets/promo5.jpg";
 import pizzaPromo6 from "@/assets/promo6.jpg";
-import ProductShelf from "@/components/ProductShelf";
+import ProductShelf from "../../components/ProductShelf";
 import { partners } from "@/helpers/dataStores";
 import { useAppSelector } from "@/redux/hook";
 import Image from "next/image";

@@ -1,8 +1,6 @@
 "use client";
 import bonecoImg from "@/assets/chef.jpg";
 import delivery from "@/assets/pizza-delivery-man-thinking.jpg";
-import Footer from "@/components/Footer";
-import Header from "@/components/Haeder";
 import { Button } from "@/components/ui/button";
 import { dataPizzas } from "@/helpers/dataPizzas";
 import { partners } from "@/helpers/dataStores";

@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ReduxProvider } from "@/components/ReduxProvider";
+import ReduxProvider from "../components/ReduxProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,9 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(inter.className)}>
-        <ReduxProvider>
-          <ProviderGlobal>{children}</ProviderGlobal>
-        </ReduxProvider>
+        <ReduxProvider>{children}</ReduxProvider>
         <Toaster />
       </body>
     </html>
