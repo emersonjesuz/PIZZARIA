@@ -8,7 +8,7 @@ import { Button } from "../ui/button";
 import { useAppDispatch, useAppSelector } from "@/redux/hook";
 import { RemoveAllShoppingCar } from "@/redux/reducers/shoppingCarReducer";
 
-export default function AlertSubmit({
+export default function SubmitAlert({
   children,
   open,
   setOpen,
