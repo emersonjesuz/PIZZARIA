@@ -10,6 +10,7 @@ import { FormEvent, useState } from "react";
 import { CgProfile } from "react-icons/cg";
 import { FaPizzaSlice } from "react-icons/fa";
 import { PiLockKeyFill } from "react-icons/pi";
+import Cookies from "js-cookie";
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -23,6 +24,7 @@ export default function Login() {
     }
     dispatch(UserRedux(username));
     showToast("Login feito com sucesso.", "success");
+    Cookies.set("login", username, { expires: 1 });
     router.push("/");
   }
 

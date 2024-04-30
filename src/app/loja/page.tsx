@@ -84,7 +84,7 @@ export default function Loja() {
                   pizzaria do zeca
                 </option>
                 <option
-                  className="bg-vermelho_1 text-white font-bold focus:bg-black "
+                  className="bg-vermelho_1 text-white font-bold  "
                   value=""
                 >
                   pizzaria do zullu

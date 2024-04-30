@@ -41,8 +41,8 @@ export default function ProductShelf() {
           <div className="flex items-center flex-col justify-between py-2 h-full">
             <h3 className="font-bold text-center">{pizza.name}</h3>
             <p className="text-center">{pizza.description}</p>
-            <p className="text-center font-bold bg-vermelho_1/90 text-white w-full rounded-sm">
-              valor:R$ {pizza.price.toFixed(2)}
+            <p className="text-center font-bold py-2  bg-vermelho_1/90 text-white w-full rounded-sm">
+              R$ {pizza.price.toFixed(2)}
             </p>
           </div>
         </div>

@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="flex flex-col ">
       <main className="flex flex-col min-h-screen bg-slate-100 pb-10">
-        <div className="flex items-center justify-center flex-col-reverse lg:flex-row gap-4 px-8 py-10 bg-white w-full min-h-[80vh]">
+        <div className="flex items-center justify-center flex-col-reverse lg:flex-row gap-4 px-8 py-10 mt-4 bg-white w-full min-h-[80vh]">
           <div className="flex flex-col gap-3 w-[300px] lg:w-[400px]">
             <h1 className="text-[35px] text-vermelho_3 font-bold">
               Olá! Eu sou o <span className="text-red-900">Zé</span> e dou as

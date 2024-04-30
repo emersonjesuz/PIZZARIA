@@ -12,11 +12,22 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { usePathname } from "next/navigation";
-import { useAppSelector } from "@/redux/hook";
+import { useAppDispatch, useAppSelector } from "@/redux/hook";
+import Cookies from "js-cookie";
+import { useEffect } from "react";
+import { UserRedux } from "@/redux/reducers/userReducer";
 
 export default function Header() {
   const path = usePathname();
   const useUserRedux = useAppSelector(({ user }) => user);
+  const dispatch = useAppDispatch();
+  const login = Cookies.get("login");
+
+  useEffect(() => {
+    if (login) {
+      dispatch(UserRedux(login));
+    }
+  }, []);
 
   return (
     <div className=" fixed top-0 left-0 lg:relative flex justify-center items-center w-full  h-[70px] bg-white shadow-lg shadow-black/30 z-50 ">
