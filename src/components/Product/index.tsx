@@ -15,7 +15,7 @@ interface Pizza {
   image: any;
 }
 
-export default function ProductShelf() {
+export default function Product() {
   const dispatch = useAppDispatch();
 
   function addItemInShoppingCar(pizza: Pizza) {

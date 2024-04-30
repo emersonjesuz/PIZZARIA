@@ -3,7 +3,7 @@ import { store } from "@/redux/store";
 import { Provider } from "react-redux";
 import ProviderGlobal from "../ProviderGlobal";
 
-export default function ReduxProvider({
+export default function ProviderRedux({
   children,
 }: Readonly<{
   children: React.ReactNode;
