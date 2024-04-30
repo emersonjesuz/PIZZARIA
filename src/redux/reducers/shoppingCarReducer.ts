@@ -6,6 +6,7 @@ interface Shopping {
   id: number;
   action: boolean;
   unit: number;
+  active: boolean;
 }
 
 interface InititalState {

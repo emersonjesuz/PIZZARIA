@@ -7,6 +7,7 @@ export const pizzas = [
     unit: 1,
     price: 30.0,
     image: imagePizza,
+    active: false,
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const pizzas = [
     unit: 1,
     price: 28.0,
     image: imagePizza,
+    active: false,
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ export const pizzas = [
     unit: 1,
     price: 32.0,
     image: imagePizza,
+    active: false,
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ export const pizzas = [
     unit: 1,
     price: 31.0,
     image: imagePizza,
+    active: false,
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ export const pizzas = [
     unit: 1,
     price: 29.0,
     image: imagePizza,
+    active: false,
   },
   {
     id: 6,
@@ -52,6 +57,7 @@ export const pizzas = [
     unit: 1,
     price: 35.0,
     image: imagePizza,
+    active: false,
   },
   {
     id: 7,
@@ -61,6 +67,7 @@ export const pizzas = [
     unit: 1,
     price: 33.0,
     image: imagePizza,
+    active: false,
   },
   {
     id: 8,
@@ -70,6 +77,7 @@ export const pizzas = [
     unit: 1,
     price: 34.0,
     image: imagePizza,
+    active: false,
   },
   {
     id: 9,
@@ -78,6 +86,7 @@ export const pizzas = [
     unit: 1,
     price: 30.0,
     image: imagePizza,
+    active: false,
   },
   {
     id: 10,
@@ -86,6 +95,7 @@ export const pizzas = [
     unit: 1,
     price: 32.0,
     image: imagePizza,
+    active: false,
   },
   {
     id: 11,
@@ -95,6 +105,7 @@ export const pizzas = [
     unit: 1,
     price: 38.0,
     image: imagePizza,
+    active: false,
   },
   {
     id: 12,
@@ -104,6 +115,7 @@ export const pizzas = [
     unit: 1,
     price: 33.0,
     image: imagePizza,
+    active: false,
   },
   {
     id: 13,
@@ -113,6 +125,7 @@ export const pizzas = [
     unit: 1,
     price: 31.0,
     image: imagePizza,
+    active: false,
   },
   {
     id: 14,
@@ -122,6 +135,7 @@ export const pizzas = [
     unit: 1,
     price: 27.0,
     image: imagePizza,
+    active: false,
   },
   {
     id: 15,
@@ -131,6 +145,7 @@ export const pizzas = [
     unit: 1,
     price: 29.0,
     image: imagePizza,
+    active: false,
   },
   {
     id: 16,
@@ -140,6 +155,7 @@ export const pizzas = [
     unit: 1,
     price: 28.0,
     image: imagePizza,
+    active: false,
   },
   {
     id: 17,
@@ -148,6 +164,7 @@ export const pizzas = [
     unit: 1,
     price: 36.0,
     image: imagePizza,
+    active: false,
   },
   {
     id: 18,
@@ -157,6 +174,7 @@ export const pizzas = [
     unit: 1,
     price: 37.0,
     image: imagePizza,
+    active: false,
   },
   {
     id: 19,
@@ -166,6 +184,7 @@ export const pizzas = [
     unit: 1,
     price: 35.0,
     image: imagePizza,
+    active: false,
   },
   {
     id: 20,
@@ -175,6 +194,7 @@ export const pizzas = [
     unit: 1,
     price: 36.0,
     image: imagePizza,
+    active: false,
   },
   {
     id: 21,
@@ -184,5 +204,6 @@ export const pizzas = [
     unit: 1,
     price: 36.0,
     image: imagePizza,
+    active: false,
   },
 ];

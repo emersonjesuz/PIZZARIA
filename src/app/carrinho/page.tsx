@@ -1,4 +1,5 @@
 "use client";
+import SubmitAlert from "@/components/SubmitAlert";
 import { useAppSelector } from "@/redux/hook";
 import showToast from "@/utils/showToast";
 import Link from "next/link";
@@ -12,6 +13,7 @@ export default function Carrinho() {
   const router = useRouter();
 
   const [modelOrder, setModelOrder] = useState(false);
+  const [open, setOpen] = useState(false);
 
   function showOrder() {
     showToast("Pedido Feito Com sucesso", "success");
@@ -63,7 +65,7 @@ export default function Carrinho() {
         <div
           onClick={() => setModelOrder(false)}
           data-model={modelOrder}
-          className="cursor-pointer hover:bg-slate-600 flex items-center pl-6 data-[model=false]:bg-vermelho_1 bg-transparent w-full h-full rounded-2xl data-[model=false]:shadow-lg data-[model=false]:shadow-black/30"
+          className="cursor-pointer hover:bg-slate-600 flex items-center pl-6 data-[model=false]:bg-vermelho_1 bg-transparent w-full data-[model=true]:w-[50%]  h-full rounded-2xl data-[model=false]:shadow-lg data-[model=false]:shadow-black/30 transition-all"
         >
           <span data-model={modelOrder} className="text-white font-bold">
             Retirada
@@ -72,7 +74,7 @@ export default function Carrinho() {
         <div
           onClick={() => setModelOrder(true)}
           data-model={modelOrder}
-          className="cursor-pointer hover:bg-slate-600  flex items-center pl-6 data-[model=true]:bg-vermelho_1 bg-transparent w-full h-full rounded-2xl data-[model=true]:shadow-lg data-[model=true]:shadow-black/30"
+          className="cursor-pointer hover:bg-slate-600  flex items-center pl-6 data-[model=true]:bg-vermelho_1 bg-transparent w-full data-[model=false]:w-[50%] h-full rounded-2xl data-[model=true]:shadow-lg data-[model=true]:shadow-black/30 transition-all"
         >
           <span data-model={modelOrder} className="text-white font-bold">
             Delivery
@@ -88,7 +90,9 @@ export default function Carrinho() {
             pedido não será entregue.
           </p>
           <div className="w-full">
-            <label htmlFor="time">Horario de Retirada</label>
+            <label className="text-zinc-500" htmlFor="time">
+              Horario de Retirada
+            </label>
             <select
               className="w-full h-10 border border-slate-600 rounded-md"
               name=""
@@ -100,14 +104,18 @@ export default function Carrinho() {
             </select>
           </div>
           <div className="w-full">
-            <label htmlFor="person">Quem vai retirar?</label>
+            <label className="text-zinc-500" htmlFor="person">
+              Quem vai retirar?
+            </label>
             <input
               className="w-full h-10 border border-slate-600 rounded-md"
               id="person"
             />
           </div>
           <div className="w-full">
-            <label htmlFor="person">Documento rg/cpf</label>
+            <label className="text-zinc-500" htmlFor="person">
+              Documento rg/cpf
+            </label>
             <input
               className="w-full h-10 border border-slate-600 rounded-md"
               id="person"
@@ -123,21 +131,27 @@ export default function Carrinho() {
             encontrá-lo.
           </p>
           <div className="w-full">
-            <label htmlFor="city">Endereço</label>
+            <label className="text-zinc-500" htmlFor="city">
+              Endereço
+            </label>
             <input
               className="w-full h-10 border border-slate-600 rounded-md"
               id="city"
             />
           </div>
           <div className="w-full">
-            <label htmlFor="cep">Rua</label>
+            <label className="text-zinc-500" htmlFor="cep">
+              Rua
+            </label>
             <input
               className="w-full h-10 border border-slate-600 rounded-md"
               id="cep"
             />
           </div>
           <div className="w-full">
-            <label htmlFor="descript">Complemento</label>
+            <label className="text-zinc-500" htmlFor="descript">
+              Complemento
+            </label>
             <input
               className="w-full h-10 border border-slate-600 rounded-md"
               id="descript"
@@ -146,18 +160,16 @@ export default function Carrinho() {
         </div>
       )}
 
-      <div className="flex items-center justify-center gap-2 w-[90%] lg:w-[500px]">
-        <button className="px-4 py-2 w-full bg-zinc-500 text-white rounded-lg mx-auto">
+      <div className="flex items-center justify-between gap-2 w-[90%] lg:w-[500px]">
+        <button
+          onClick={() => router.push("/loja")}
+          className="px-2 py-2  w-[50%] bg-zinc-500 text-white rounded-lg mx-auto"
+        >
           Editar Pedido
         </button>
-        <button
-          onClick={() => {
-            showOrder();
-          }}
-          className="px-4 py-2 w-full bg-green-600 text-white rounded-lg mx-auto"
-        >
-          Confirma compra
-        </button>
+        <SubmitAlert open={open} setOpen={setOpen}>
+          <span className=" bg-green-600 text-white">Confirma compra</span>
+        </SubmitAlert>
       </div>
     </div>
   );

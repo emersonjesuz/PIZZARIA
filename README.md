@@ -60,7 +60,7 @@ A seguir, temos uma lista com promoções ou produtos em destaque, na versão mo
 
 Aqui temos a lista para fazer o pedido onde clicando na pizza desejada é acrescentado ao carrinho.
 
-![Imagem 24](public/image-24.png) ![Imagem 25](public/image-23.png)
+![Imagem 24](public/image-24.png) ![alt text](image.png)![Imagem 25](public/image-23.png)
 
 #### Botões Inferiores
 
@@ -79,6 +79,6 @@ Temos a possibilidade de escolher qual método deseja se é delivery ou retirada
 
 ## Melhorias a Serem Feitas
 
-1. Escolher a unidade, tamanho.
-2. Trazer um sistema backoffice para gerenciar e administrar.
-3. Formas de pagamentos, cartão, pix, etc.
+1.  tamanho da pizza.
+2.  Trazer um sistema backoffice para gerenciar e administrar.
+3.  Formas de pagamentos, cartão, pix, etc.
