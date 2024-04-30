@@ -1,3 +1,7 @@
+# Link do deploy
+
+deploy do projeto pizzaria: https://pizzaria-livid-nine.vercel.app/
+
 ### Página Principal
 
 Mobile / Desktop
