@@ -60,7 +60,7 @@ A seguir, temos uma lista com promoções ou produtos em destaque, na versão mo
 
 Aqui temos a lista para fazer o pedido onde clicando na pizza desejada é acrescentado ao carrinho.
 
-![Imagem 24](public/image-24.png) ![alt text](image.png)![Imagem 25](public/image-23.png)
+![Imagem 24](public/image-24.png) ![alt text](public/image.png)![Imagem 25](public/image-23.png)
 
 #### Botões Inferiores
 
