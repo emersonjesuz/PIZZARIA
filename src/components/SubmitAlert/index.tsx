@@ -25,7 +25,7 @@ export default function SubmitAlert({
   return (
     <div>
       <AlertDialog open={open} onOpenChange={(event) => setOpen(event)}>
-        <AlertDialogTrigger className="px-2 py-2 w-full bg-green-600 rounded-lg">
+        <AlertDialogTrigger className="px-2 py-2 w-full lg:w-[250px] bg-green-600 rounded-lg">
           {children}
         </AlertDialogTrigger>
         <AlertDialogContent>

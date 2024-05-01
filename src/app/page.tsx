@@ -23,7 +23,10 @@ export default function Home() {
               Faça seu pedido diretamente em uma de nossas lojas e aproveite
               nossas deliciosas pizzas feitas na hora.
             </p>
-            <Button className="hover:bg-vermelho_3 mt-[30px] lg:w-[200px]">
+            <Button
+              onClick={() => router.push("/loja")}
+              className="hover:bg-vermelho_3 mt-[30px] lg:w-[200px]"
+            >
               Fazer Pedido
             </Button>
           </div>
@@ -145,7 +148,10 @@ export default function Home() {
                 delivery. Estamos aqui para atendê-lo com rapidez e qualidade!
               </p>
             </div>
-            <Button className="hover:bg-vermelho_3 mt-[30px] lg:w-[200px]">
+            <Button
+              onClick={() => router.push("/loja")}
+              className="hover:bg-vermelho_3 mt-[30px] lg:w-[200px]"
+            >
               Pedir delivery
             </Button>
           </div>

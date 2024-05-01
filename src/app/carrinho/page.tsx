@@ -163,7 +163,7 @@ export default function Carrinho() {
       <div className="flex items-center justify-between gap-2 w-[90%] lg:w-[500px]">
         <button
           onClick={() => router.push("/loja")}
-          className="px-2 py-2  w-[50%] bg-zinc-500 text-white rounded-lg mx-auto"
+          className="px-2 py-2  w-[50%]  bg-zinc-500 text-white rounded-lg mx-auto"
         >
           Editar Pedido
         </button>
